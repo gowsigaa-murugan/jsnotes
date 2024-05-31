@@ -1,0 +1,19 @@
+<button onclick="update()">add</button>
+<div id="result"></div>
+<script>
+    var div=document.getElementById("result")
+    function update()
+    {
+        var listitem=document.createElement("h2")
+        listitem.textContent="gowsi"
+        div.append(listitem)//append is used to repeated the words
+    }
+</script>
+<button id ="color" onclick="get()">ok</button>
+<script>
+   var ok=document.getElementById("color")
+   function get()
+    {
+    ok.style.backgroundColor="red"
+   } 
+</script>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>script</title>
+    <script>
+        alert("hi to every one");
+    </script>
+</head>
+<body>
+<p id="one">hi i am gowsigaa</p>
+<h1 id="two">hello word</h1>
+<button onclick="change()">change</button><!---on click is the event function it will occur only at that particular time this change the hi to bye when i click the change button-->
+<script>
+    // select paragraph by using id
+    //console.log(document.getElementById("one"))
+    // store paragraph in variable
+    var para=document.getElementById("one")
+   // console.log(para) when i want only a text or two words for eg i am
+   console.log(para.textContent)
+   para.textContent="bye"
+   var head=document.getElementById("two")
+   console.log(head.textContent)
+
+
+   function change()// this will only occcur when will i click the particular button
+   {
+head.textContent="bye world"
+   }
+   
+    </script>
+        
+    
+</body>
+</html>

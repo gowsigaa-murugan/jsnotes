@@ -1,0 +1,33 @@
+html,body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+table{
+    background-color: rgb(41, 173, 173);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    color: brown;
+    text-align: center;
+    text-decoration:underline blue;
+    padding:10px;
+
+}
+td{
+    padding: 10px;
+}
+form{
+    border:dotted pink;
+    body {
+        background-image: url("blue\ img.jpg");
+        
+      }
+}
+button{
+border-radius:70px ;
+color:black;
+background-color: antiquewhite;
+
+}

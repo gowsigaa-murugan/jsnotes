@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Web Page Structure</title>
+    <style>
+        body {
+            margin: 3px;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            border-radius: 20px;
+        }
+
+        header {
+            background-color: #f0f0f0;
+            padding: 18px;
+            text-align: center;
+            border-radius: 20px;
+            border-color:black;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        aside {
+            float: left;
+            width: 200px;
+            height: 344px;
+            background-color: pink;
+            padding: 20px;
+            border: 2px black;
+            border-radius: 13px;
+        }
+
+        section {
+            background-color: wheat;
+            height: 344px;
+            
+            padding: 20px;
+            text-align: center;
+            width: 1103px; /* Adjust width considering aside */
+            margin-left: 170px;
+            /* Adjust margin to avoid overlapping with aside */
+            border-radius: 20px;
+            
+        }
+
+        footer {
+            position: fixed;
+            width: 95%;
+            /* Adjusted bottom position */
+            left: 20px; /* Adjusted left position */
+            right: 20px; /* Adjusted right position */
+            padding: 22px;
+            background-color: rgb(110, 110, 110);
+            border-radius: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Header</h1>
+</header>
+<nav>
+    <ul>
+        <li>home</li>
+        <li>signup</li>
+        <li> log out</li>
+    </ul>
+</nav><div>
+<aside class="sidebar">
+    <h2>Sidebar</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</aside><div>
+<section class="content">
+    <h2>Content</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</section>
+</div>
+<div>
+<footer>
+    <p>&copy; web page</p>
+
+</footer>
+</div>
+</body>
+</html>

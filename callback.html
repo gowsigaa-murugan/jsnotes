@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <select id="branch">
+        <option id="select">select</option>
+    </select>
+    <script>
+        //callback-function passed as a argument
+        function greetconsole(name){
+            console.log('hello',name)
+        }
+        function greetheading(name){
+    const heading=document.querySelector('h1')
+    heading.innerHTML='hello'+name
+        }
+        function greet(callback){
+            callback('gowsi')
+        }
+        greet(greetconsole)
+       // greet(greetheading)
+       // arrow function
+       greet(name=>{const heading=document.querySelector('h1')
+    heading.innerHTML='hello'+name})
+
+   // for each -->to understand the callback
+   arr=['apple','orange','mango']
+arr.array.forEach(print)//when we a object.function is called method
+function print(val){
+    console.log(val)
+}
+arr.forEach(val=>{console.log(val)})
+// we want change the arrayindex
+arr.forEach((val,index,arr)=>{
+    arr[index]=val.toUpperCase()
+})
+arr=['cse','ece','mech','it']
+arr.forEach(val=>{
+    const opt=document.createElement("option")
+    opt.textContent=val
+    opt.val=val
+    document.getElementById('branch').appendChild(option)
+})
+
+    
+    </script>
+    
+</body>
+</html>

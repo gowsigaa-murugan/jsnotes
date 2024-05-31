@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Structure</title>
+    <style>
+       html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 20px;
+            
+        }
+        header {
+            
+            height: 10%; border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+            border-radius: 20px;
+            
+        }
+       
+        #center{
+            display: flex;
+            height: 80%;
+            
+        }
+        #side {
+            height:100% ;
+            width: 30%;border-radius: 20px;
+            border-radius: 20px;
+            background-color: antiquewhite;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        #menu { 
+            width:  70%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+
+            background-color: hsl(56, 65%, 86%);
+        
+            
+        }
+        footer {
+            
+            height:10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: hotpink;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <div id="center">
+        <div id="side">Sidebar</div>
+       <div id="menu">Content</div>
+    </div>
+    <footer>Footer</footer>
+</body>
+</html>
+

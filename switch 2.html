@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>City Stats</title>
+    <style>html,
+        body{
+           margin: 0;
+           font-family: 'Poppins', sans-serif;
+           background-color:#f5e8ba;
+        }
+        
+        #wrapper div,#wrapper h2{
+            display:flex;
+            justify-content: center;
+            
+        }
+        
+        h2{
+            color:#ffeba7;
+            letter-spacing: 1px;
+        }
+        select{
+            border-radius: 5px;
+            border: 2px solid black ;
+            margin-top:30px;
+            height:2.5em;
+            width:250px;
+            padding-left:10px;
+            
+        }
+        
+        
+        input:active{
+            border:none;
+        }
+        #wrapper{
+            height:500px;
+            width:400px;
+            margin:200px auto;
+            background-color:#1f2029;
+            border-radius:10px;
+            padding:30px;
+        }
+        
+        button{
+            margin-top:20px;
+            background-color:#ffeba7;
+            border-radius: 4px;
+            height: 44px;
+            font-weight: 600;
+            padding: 0 30px;
+            letter-spacing: 1px;
+            border: none;
+            background-color: #ffeba7;
+            color: #102770;
+        }
+        
+        button:hover{
+            cursor:pointer;
+        }
+        #result{
+            color:white;
+            margin-top:20px;
+            font-size:32px;
+        }</style>
+</head>
+<body>
+    <div id="wrapper">
+        <h2>Select a City</h2>
+        <div class="inputdiv">
+           <select id="input">
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+           </select>
+        </div>       
+        <div>
+            <button type = "submit" >Show Stats</button>
+        </div>
+    </div>
+    <script >
+        /*
+'Chennai': population = 4646732
+           literacyRate = 90.20
+           language = 'Tamil'
+'Bengaluru':population = 8443675
+            literacyRate = 88.71
+            language = 'Kannada'
+'Mumbai':population = 12442373
+        literacyRate = 89.73
+        language = 'Marathi'
+'Delhi': population = 16787941
+         literacyRate = 86.20
+         language = 'Hindi'
+The Indian city of Bengaluru has a population of 8443675. Language spoken is Kannada and literacy rate is 88.71%.
+*/
+
+const button = document.querySelector('button')
+let resultdiv = document.createElement('div')
+resultdiv.id = 'result'
+document.getElementById('wrapper').appendChild(resultdiv)
+
+//event listener
+button.addEventListener('click',displayStats)
+function displayStats(){
+    
+    const input = document.getElementById("input")
+    const city = input.options[input.selectedIndex].value
+    let population = 0, literacyRate = 0, language =''
+    switch(city){
+        case 'Bengaluru':
+            population = 8443675
+            literacyRate = 88.71
+            language = 'Kannada'
+            break
+        case 'Chennai':
+            population = 4646732
+            literacyRate = 90.20
+            language = 'Tamil'
+            break
+        case 'Mumbai':
+            population = 12442373
+            literacyRate = 89.73
+            language = 'Marathi'
+            break
+        case 'Delhi':
+            population = 16787941
+            literacyRate = 86.20
+            language = 'Hindi'
+            break
+
+    }
+    let text = `The Indian city of ${city} has a population of ${population}. Language spoken is ${language} and literacy rate is ${literacyRate}%.`
+    console.log(text)
+    
+    document.getElementById('result').innerHTML = text
+
+}
+        
+    </script>
+</body>
+</html>

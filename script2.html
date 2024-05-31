@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom model</title>
+</head>
+<body>
+    <input id="box1" >
+    <input id="box2" >
+    <button onclick="resultfunction()">add</button>
+    <p id="result">result</p>
+    <script>
+        //for manipulation
+        // selecting box1 and box2
+        var num1=document.getElementById("box1")
+        var num2=document.getElementById("box2")
+        var result=document.getElementById("result")
+        //store a values
+        //var num1value=Number(num1.value)
+       // var num2value=Number(num2.value)
+       // var total=num1value+num2value
+       
+        function resultfunction() 
+        {
+            var num1value=Number(num1.value)
+        var num2value=Number(num2.value)
+        var total=num1value+num2value
+            result.textContent=total
+        }
+        
+        //console.log(num1.value);
+       // console.log(num2.value);
+
+    </script><!--this is given a fixed number-->
+</body>
+</html>

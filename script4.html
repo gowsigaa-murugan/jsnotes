@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom manipulation</title><!--dom manipulation guess the number project-->
+</head>
+<body>
+    <h1>guess the number</h1>
+    <input id="guessnumber">
+    <button onclick="check()">check</button>
+    <p id="result">you are right/ wrong</p>
+    <p id="score">score:10</p>
+    <script>
+        var guessnumber=document.getElementById("guessnumber")
+       var score=document.getElementById("score")
+        var result=document.getElementById("result")
+var randomnum=Math.floor(Math.random()*10)+1
+var totalscore=10
+        function check()
+         {
+            var enterednumber = guessnumber.value
+           if (randomnum==enterednumber)
+           {
+            console.log("right")
+            result.textContent="right"
+            alert("you are correct!!!!")
+           }
+           else
+           {
+            totalscore=totalscore-1
+            score.textContent="score:"+totalscore
+            console.log("wrong")
+            result.textContent="wrong"
+
+           }
+        }
+    </script>
+</body>
+</html>

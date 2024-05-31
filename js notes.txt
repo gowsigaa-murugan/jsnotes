@@ -1,0 +1,542 @@
+javascript
+//var,constantand let--->print variables
+/*r a=10
+var b=20
+//vaR store a variable to value var---> global scope
+console.log(a+b)*/
+/*  {
+    let a=10
+    console.log(a
+}i// let --->private  scope it can only print the result
+{let a=10}
+console.log(a) this can show a syntax error
+const->constant
+const a=20;
+a=2;
+console.log(a}
+when const is mentioned a value cannot be changed
+program 1
+var price=1200
+var product=iphone // when we given like this It is not defined it is considered as variable
+var product=”iphone” when we store a string it want to be mention in double quotes
+var tax=20
+console.log(product)
+var total=price+tax
+console.log(total)
+console.log(“total”) it print a statement what we mentioned in a double quotes
+
+program 2
+var fruit name =”grapes”
+var count=10
+var price=100
+var total=count*price
+console.log(total)
+keywords
+var,let,for,const,function,for
+for eg var if =20// we cannot mention keywords as a variable
+comment
+single line comment //
+// var a =20
+Multiline comments
+/*hi how are you
+I am fine*/
+Operators
++,-,*,/
+Post  increment
+Var a=210
+a++
+console.log(a)
+output
+211
+Post  drecement
+Var a=210
+a--
+console.log(a)
+output
+209
+Post increment
+Var a=210
+Var b=++a
+console.log(b)
+console.log(a)
+output
+210
+211
+Post decrement
+Var a=210
+Var b=a--
+console.log(b) 
+console.log(a)
+output
+210
+209
+
+
+Pre increment
+Var a=210
+Var b=++a
+console.log(a)
+output
+211
+Pre decrement
+Var a=210
+Var b=--a
+console.log(a)
+output
+209
+Data type
+Console.log(typeof(“10”)
+When we given in a double quotes it is a  string
+Output
+String
+Two types of data type
+a)primitive datatype
+ number,string,Boolean,null,undefined
+b)non primitive datatype
+object,array
+examples
+var a
+console.log(a)
+output
+undefined
+function syntax
+function<function name>() {}
+eg
+function hi()
+{
+Console.log(“hey there”)
+}
+hi()Onclick-->when we click a mouse
+var faname="gowsi"
+var faplace="sankari"
+var fahero="vijay"
+function favourite()
+{
+console.log("favourite name:"+faname)
+console.log("favourite place:"+faplace)
+console.log("favourite hero:"+fahero)// + is uesd for mention the variable namefor eg in python print("a=",b+c)here (,)-->operator work is done by +
+}
+favourite()
+
+                                            function with parameters
+
+function add(a,b)
+{
+    console.log(a+b)
+}
+add(30,50)
+function mul(len,bre) 
+{
+    console.log(len*bre)
+    
+}
+mul (34,60)
+     
+                                            function return type
+
+
+add(30,50)
+function mul(len,bre) 
+{
+    console.log(len*bre)
+    
+}
+mul (34,60)
+function myname()
+ {
+    return "gowsi"//"var a" can call a function name and then it print a name
+}
+var c=myname()
+console.log (c)
+function addition(d,e) 
+{
+    return (d+e)
+}
+var total=add(30,50)
+console.log(total)
+
+
+          
+
+
+conditional statement
+
+1) if else
+if (true)
+{
+Console.log(“if is working”) // code to be executed if the condition is true
+}
+else
+{
+Console.log(“else is working”) // code to be executed if the condition false
+
+}
+Eg
+
+var rain=True
+if (true) {
+   console.log("take the umberalla") 
+} 
+else
+{
+    console.log("enjoy the sunshine")
+}
+Logical operators
+// logical AND
+Console.log(true && true);//true
+Console.log(true && false);//false
+//logical OR
+Console.log(true || true);//true
+// logical NOT
+Console.log(!true);false -->inverse function
+Eg
+
+// logical  operators
+
+console.log(false && false)// and
+console.log(false && true)// and
+console.log(true && false)// and
+console.log(true && true)// and
+
+console.log(false || false)// or
+console.log(true || false)// or
+console.log(false || true)// or
+console.log(true || true)// or
+
+console.log( !false)// not
+console.log( !true)// not
+
+
+
+
+
+
+
+
+
+
+else if program
+
+var color = "yellow"
+if (color == "red")
+    {
+        console.log("stop")
+    }
+    if (color =="yellow")
+        {
+            console.log(" get ready to go")
+        }
+        else if (color =="green")
+            {
+            console.log("go")
+        }
+        var score = 50
+        if (score <=50){
+            console.log("you need to improve")
+        }
+        else if (score>50 && score < 70)
+            {
+                console.log("gooidx job")
+            }
+            else{
+                console.log("excellent")
+            }
+
+For loop
+It is a control flow statement used to repeatedly execute a block of code
+
+Syntax
+ For (initialization;condition;iteration)
+{ // code to be executed in each iteration }
+
+Eg
+
+ for (count=1;count<5;count=count+1)
+            {
+                console.log("gowsi")
+            } //output:gowsi,gowsi,gowsi,gowsi
+           
+ for (a=1;a<=100;a=a+1)
+                {
+                    console.log(a)
+                } // output 1-100 
+
+for (b=1;b<=100;b=b+2)
+                    {
+                        console.log(b)
+                    }  // output 1,3,5,7,etc…………….
+    
+
+
+
+
+Print 10 to 1(which will be in reverse order)
+
+
+ for (c=10;c>=1;c=c-1)
+                        {
+                            console.log(c)
+                        }  
+Alert message in web page with html
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>script</title>
+    <script>
+        alert("hi to every one");
+    </script>
+</head>
+<body>
+    <div id="output">gowsi</div>
+    <button type="button" onclick="alert('hello! how are you?')">ok</button>
+    <script>
+       // alert('hi to everyone');
+       console.dir(document);
+       console.log('hello');
+        
+    </script>
+</ body>
+
+        
+
+DOM manipulation IN JS WITH HTML
+
+Onchange-html element has been changed
+Onclick-user click an html element
+Onmouseover-user moves the mouse over an html element
+Onmouseout-user moves the away from the html element
+Onkeydown-userpushes a keyboard key
+Onload-browser has finished loading the page
+
+
+
+
+
+
+
+
+
+
+
+
+DOM MODEL IN JS WITH HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>script</title>
+    <script>
+        alert("hi to every one");
+    </script>
+</head>
+<body>
+<p id="one">hi i am gowsigaa</p>
+<h1 id="two">hello word</h1>
+<button onclick="change()">change</button><!---on click is the event function it will occur only at that particular time this change the hi to bye when i click the change button-->
+<script>
+    // select paragraph by using id
+    //console.log(document.getElementById("one"))
+    // store paragraph in variable
+    var para=document.getElementById("one")
+   // console.log(para) when i want only a text or two words for eg i am
+   console.log(para.textContent)
+   para.textContent="bye"
+   var head=document.getElementById("two")
+   console.log(head.textContent)
+
+   function change()// this will only occcur when will i click the particular button
+   {
+head.textContent="bye world"
+   }
+   
+    </script>
+        
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+Eg for fixed number dom manipulation
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom model</title>
+</head>
+<body>
+    <input id="box1" value="43">
+    <input id="box2" value="54">
+    <button onclick="resultfunction()">add</button>
+    <p id="result">result</p>
+    <script>
+        //for manipulation
+        // selecting box1 and box2
+        var num1=document.getElementById("box1")
+        var num2=document.getElementById("box2")
+        var result=document.getElementById("result")
+        //store a values
+        var num1value=Number(num1.value)
+        var num2value=Number(num2.value)
+        var total=num1value+num2value
+       
+        function resultfunction() 
+        {
+            result.textContent=total
+        }
+        
+        //console.log(num1.value);
+       // console.log(num2.value);
+
+    </script><!--this is given a fixed number-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+Another example
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom model</title>
+</head>
+<body>
+    <input id="box1" >
+    <input id="box2" >
+    <button onclick="resultfunction()">add</button>
+    <p id="result">result</p>
+    <script>
+        //for manipulation
+        // selecting box1 and box2
+        var num1=document.getElementById("box1")
+        var num2=document.getElementById("box2")
+        var result=document.getElementById("result")
+        //store a values
+        //var num1value=Number(num1.value)
+       // var num2value=Number(num2.value)
+       // var total=num1value+num2value
+       
+        function resultfunction() 
+        {
+            var num1value=Number(num1.value)
+        var num2value=Number(num2.value)
+        var total=num1value+num2value
+            result.textContent=total
+        }
+        
+        //console.log(num1.value);
+       // console.log(num2.value);
+
+    </script><!--this is given a fixed number-->
+</body>
+</html>
+
+
+
+Example for guess the number
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom manipulation</title><!--dom manipulation guess the number project-->
+</head>
+<body>
+    <h1>guess the number</h1>
+    <input id="guessnumber">
+    <button onclick="check()">check</button>
+    <p id="result">you are right/ wrong</p>
+    <p id="score">score:10</p>
+    <script>
+        var guessnumber=document.getElementById("guessnumber")
+       var score=document.getElementById("score")
+        var result=document.getElementById("result")
+var randomnum=Math.floor(Math.random()*10)+1
+var totalscore=10
+        function check()
+         {
+            var enterednumber = guessnumber.value
+           if (randomnum==enterednumber)
+           {
+            console.log("right")
+            result.textContent="right"
+            alert("you are correct!!!!")
+           }
+           else
+           {
+            totalscore=totalscore-1
+            score.textContent="score:"+totalscore
+            console.log("wrong")
+            result.textContent="wrong"
+
+           }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+Style manipulation
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>style manipulation with jS</title>
+    <style>
+        div{
+            background-color: brown;
+            height: 400px;
+            width: 400px;
+        }
+        .max{
+            transition: 3s;
+            width:700px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="box"></div>
+    <button onclick="change()">change color</button>
+    <script>
+var box=document.getElementById("box")
+function change()
+{
+    box.style.backgroundColor="blue"
+    box.setAttribute("class","max")
+}
+</script>
+    
+</body>
+</html>
+

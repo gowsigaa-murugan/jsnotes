@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <label for="expression">Enter expression (e.g., 3+4): </label>
+    <input type="text" id="expression">
+    <button onclick="calculate()">Calculate</button>
+    <p id="result"></p>
+
+    <script>
+        function calculate() {
+            const expression = document.getElementById("expression").value;
+            const operands = expression.split(/[+\-*/]/);
+            const operator = expression.match(/[+\-*/]/);
+
+            if (operands.length !== 2 || !operator) {
+                document.getElementById("result").textContent = "Invalid expression!";
+                return;
+            }
+
+            const operand1 = parseFloat(operands[0]);
+            const operand2 = parseFloat(operands[1]);
+
+            let result;
+
+            switch (operator[0]) {
+                case '+':
+                    result = operand1 + operand2;
+                    break;
+                case '-':
+                    result = operand1 - operand2;
+                    break;
+                case '*':
+                    result = operand1 * operand2;
+                    break;
+                case '/':
+                    if (operand2 === 0) {
+                        result = "Cannot divide by zero!";
+                    } else {
+                        result = operand1 / operand2;
+                    }
+                    break;
+                default:
+                    result = "Invalid operator!";
+            }
+
+            document.getElementById("result").textContent = result;
+        }
+    </script>
+</body>
+</html>
