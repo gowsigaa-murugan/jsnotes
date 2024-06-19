@@ -1,0 +1,66 @@
+html,body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,9,121,1) 0%, rgba(38,67,151,1) 0%, rgba(41,138,188,1) 37%, rgba(83,114,221,1) 100%, rgba(43,181,210,1) 100%, rgba(195,59,167,1) 100%);
+background-attachment: fixed;
+margin:0;
+font-family:sans-serif;
+display:flex;
+align-items: center;
+justify-content: center;
+
+}
+#form
+{
+    width:400px;
+    
+    margin: 20vh auto 0 auto;
+    background-color:whitesmoke ;
+    border-radius: 5px;
+    padding: 30px;
+    
+}
+h1{
+    text-align: center;
+    color:black;
+}
+#form button{
+    background-color:rgba(41,138,188,1) ;
+    color:white;
+    border:1px solid rgba(41,138,188,1) ;
+    padding:10px;
+    margin:20px 0px;
+    border-radius: 8px;
+    cursor:pointer;
+    font-size:20px ;
+    width:100%;
+    
+}
+.input-group{
+    display:flex;
+    flex-direction: column;
+    margin-bottom:15px;
+}
+.input-group input{
+    border-radius: 10px;
+    font-size: 12px;
+    margin: top 5px;
+    padding:10px;
+    border:1px solid rgba(41,138,188,1);
+}
+.input-group input:focus{
+    outline: 0; /*when we touch a input box it show shows black colour this method stopped to showing that*/
+
+}
+.input-group .error
+{
+    color:red;
+    font-size: 17px;
+    margin-top: 5px;
+}
+/* when i validate above functions input box what to shown if the given statement is correct it what to be green otherwise red color*/
+.input-group.success input{
+    border-color: green;
+}
+.input-group.error input{
+    border-color:rgb(189, 11, 11)
+}
