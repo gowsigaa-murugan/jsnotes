@@ -173,6 +173,7 @@ for(let k of map1.keys())
    let map2= new Map(kvarray)
    console.log(map2)
    console.log(...map2)//...map2 convert into 2d array thisis called spread operator
+   
 
 
 
